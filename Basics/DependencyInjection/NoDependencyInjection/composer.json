@@ -1,0 +1,16 @@
+{
+    "name": "lebedev.v/no-dependency-injection",
+    "description": "No dependency injection example",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "VLebedev",
+            "email": "lebedev.v@cmd.su"
+        }
+    ],
+    "require": {}
+}
