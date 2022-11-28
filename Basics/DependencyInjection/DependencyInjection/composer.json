@@ -1,9 +1,8 @@
 {
-    "name": "lebedev.v/no-dependency-injection",
-    "description": "No dependency injection example",
+    "name": "lebedev.v/dependency-injection",
     "autoload": {
         "psr-4": {
-            "NoDependencyInjection\\App\\": "src/"
+            "DependencyInjection\\App\\": "src/"
         }
     },
     "authors": [

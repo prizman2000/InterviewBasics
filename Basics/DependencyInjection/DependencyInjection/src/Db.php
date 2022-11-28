@@ -1,6 +1,6 @@
 <?php
 
-namespace NoDependencyInjection\App;
+namespace DependencyInjection\App;
 
 use PDO;
 

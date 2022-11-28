@@ -1,18 +1,25 @@
 <?php
 
-namespace NoDependencyInjection\App;
+namespace DependencyInjection\App;
 
 use Exception;
 
 class UserController
 {
+    private UserRepository $userRepository;
+
+    public function setUserRepository(UserRepository $userRepository): self
+    {
+        $this->userRepository = $userRepository;
+        return $this;
+    }
+
     /**
      * @throws Exception
      */
     public function handle(): string
     {
-        $repo = new UserRepository();
-        $user = $repo->findByEmail('admin@cmd.su');
+        $user = $this->userRepository->findByEmail('admin@cmd.su');
         if (empty($user)) {
             throw new Exception('Пользователь не найден!');
         }

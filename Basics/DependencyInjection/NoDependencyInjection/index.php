@@ -2,7 +2,7 @@
 
 require_once 'vendor/autoload.php';
 
-use App\UserController;
+use NoDependencyInjection\App\UserController;
 
 try {
     $controller = new UserController();
