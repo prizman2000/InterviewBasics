@@ -6,13 +6,10 @@ use Exception;
 
 class UserController
 {
-    private UserRepository $userRepository;
-
-    public function setUserRepository(UserRepository $userRepository): self
-    {
-        $this->userRepository = $userRepository;
-        return $this;
-    }
+    public function __construct(
+        private readonly UserRepository $userRepository
+    )
+    {}
 
     /**
      * @throws Exception

@@ -4,13 +4,10 @@ namespace DependencyInjection\App;
 
 class UserRepository
 {
-    private Db $db;
-
-    public function setDb(Db $db): self
-    {
-        $this->db = $db;
-        return $this;
-    }
+    public function __construct(
+        private readonly Db $db
+    )
+    {}
 
     public function findByEmail(string $email): ?User
     {
