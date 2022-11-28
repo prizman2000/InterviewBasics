@@ -1,0 +1,15 @@
+{
+    "name": "lebedev.v/dependency-injection-container",
+    "autoload": {
+        "psr-4": {
+            "DependencyInjectionContainer\\App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "VLebedev",
+            "email": "lebedev.v@cmd.su"
+        }
+    ],
+    "require": {}
+}
